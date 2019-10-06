@@ -8,49 +8,61 @@
     <!-- The meta tag above tells Internet Explorer to use the latest rendering engine -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
     <!-- bootstrap.com, getting started, copy the link and paste in href="" -->  
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style2.css">
     <title>Responsive Portfolio</title>
 </head>
-<body>
-    <!-- ==================NavBar Session============================== -->
-    <header id="mainHeader">
-        <div class="container">
-            <a href="index.html" id="logo">Thanh Ngo</a>
-            <nav class= "navbar navbar-expand-sm> navbar-dark bg-dark fixed-top"></nav>
-                <div class="container">
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+<body data-spy="scroll" data-target=".navbar">
+    <!--NavBar-->
+    <div id="Header">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="navbar-brand"><h3>About Me</h3></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav" ml-auto><!--ml=margin left-->
+                        <li class="nav-item"><a href="index.html" class="nav-link">About</a><li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio<a><li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a><li>    
+                    </ul>
                 </div>
-                <!-- <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a> -->
-            </nav>
-        </div>
-    </header>
-    <!-- ===================Main Container Session========================== -->
-    <div id="mainContainer" class="container">
-        <section class="mainSection">
-            <h1>About Me</h1>
-            <img src="assets/images/MyPic.jpg" class="myPic" alt="Thanh Ngo Picture">
-            <p>I'm currently taking Full Stack Developer courses at University of Washington located in Seattle, Wa.I'am capable of learning new technologies very quickly and I am always looking for opportunities to further expand my skills and grow as developer. 
-            My goal is to learn and practice as much as I can to become a good Web Developer so I can seek for career opportunities as a front-end or back-end web developer in the Seattle area to improve my knowledge in web development.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nobis incidunt pariatur accusantium, laudantium itaque harum corporis nam vel quidem, culpa dolorum saepe officia officiis reiciendis facere eveniet id ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sequi quis, nostrum aut repellendus reprehenderit, dolores nemo architecto,beatae veritatis vel reiciendis officia officiis reiciendis facere eveniet id ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique sequi quis, nostrum aut repellendus reprehenderit, dolores nemo architecto,beatae veritatis vel reiciendis.</p>
-        </section>
+            </div>
+        </nav>
     </div>
-    <!-- <footer>
+    <!-- Show Case -->
+    <div id="bg-img"></div>
+
+    <!-- About Me! -->
+    <div id="About">
         <div class="container">
-            Copyright &copy;
-        </div>
-    </footer> -->
-    <footer>
-        <div class="container containner-fluid bg-dark">
             <div class="row">
                 <div class="col">
-                        Copyright &copy;
+                    <div id="AboutMe">
+                        <div class="card bg-white">
+                            <div class="card-title my-5">
+                                <div class="media">
+                                    <img src="assets/images/MyPic.jpg" width="250" height="300" class="img-fluid rounded-top mx-5 d-none d-lg-block" alt="Thanh Ngo Picture">
+                                    <div class="media-body">
+                                        <h3 class="display-4 ml-5">Thanh Ngo</h3>
+                                    <p class="text-muted ml-5">I'm currently taking Full Stack Web Developer courses at University of Washington located in Seattle, Wa. I'am capable of learning new technologies very quickly and I am always looking for opportunities to further expand my skills and grow as developer. 
+                                    My goal is to practice hard so I can become a good Web Developer as quick as I can so I can get a job for a real world practice as a Web Developer. I'm also open for any internship works as front-end or back-end web developer in the Seattle area. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur nobis incidunt pariatur accusantium, laudantium itaque harum corporis nam vel quidem, culpa dolorum saepe officia officiis reiciendis facere eveniet id ab! Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!-- Footer -->
+<footer class="page-footer font-small bg-white">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+</footer>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 </html>

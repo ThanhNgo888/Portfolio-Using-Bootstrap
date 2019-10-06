@@ -7,55 +7,59 @@
     <title>Contact | Thanh Ngo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 </head>
 <body>
-    <header id="mainHeader">
-        <div class="container">
-            <a href="index.html" id="logo">Thanh Ngo</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
-    <div id="mainContainer" class="container">
-        <section class="mainSection">
-            <h1>Contact</h1>
-            <form id="contactForm">
-                <ul>
-                    <li>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name here" required="required">
-                    </li>
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="name" placeholder="Enter your email address" required="required">
-                    </li>
-                    <li>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required="required">
-                        </textarea>  
-                    </li>
-                </ul>
-                <input type="submit">
-            </form>
-        </section>
+    <!--NavBar-->
+    <div id="Header">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="navbar-brand"><h3>Contact</h3></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav" ml-auto><!--ml=margin left-->
+                        <li class="nav-item"><a href="index.html" class="nav-link">About</a><li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio<a><li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a><li>    
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
-    <!-- <footer>
-        <div class="container">
-            Copyright &copy;
-        </div>
-    </footer> -->
-    <footer>
-        <div class="container containner-fluid bg-dark">
-            <div class="row">
-                <div class="col">
-                        Copyright &copy;
+<!-- Contact -->
+<div id="Contact">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="card bg-white">
+                    <div class="card-header">
+                        <div class="form-group mt-3">
+                        <input type="text" placeholder="User Name" class="form-control">
+                        </div>
+                        <div class="form-group mt-3">
+                        <input type="text" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" cols="30" rows="10" aria-placeholder="Write something on here....."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success text-white">Submit Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
+    
+<!-- Footer -->
+<footer class="page-footer font-small bg-white">
+<!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+</footer>
 </body>
 </html> 

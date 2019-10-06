@@ -7,62 +7,76 @@
     <title>Portfolio | Thanh Ngo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 </head>
 <body>
-    <header id="mainHeader">
-        <div class="container">
-            <a href="index.html" id="logo">Thanh Ngo</a>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
-    <div id="mainContainer" class="container">
-        <section class="mainSection">
-            <h1>Portfolio</h1>
-            <div class="work">
-                    <img src="assets/images/hangman.jpg" alt="Hangman">
-
-                    <h3>Word Guess</h3>
-                  </div>
-                  <div class="work">
-                    <img src="assets/images/RPG_Game.jpg" alt="RPG Game">
-            
-                    <h3>RPG Game</h3>
-                  </div>
-                  <div class="work">
-                    <img src="assets/images/triviaGame.png" alt="Trivia Game">
-            
-                    <h3>Trivia Game</h3>
-                  </div>
-                  <div class="work">
-                    <img src="assets/images/RugersInfoWidget.png" alt="Rutgers Info Widget">
-            
-                    <h3>Rutgers Info Widget</h3>
-                  </div>
-                  <div class="work">
-                    <img src="assets/images/rockPaperScissors.png" alt="Rock Paper Scissors">
-            
-                    <h3>Rock Paper Scissors</h3>
-            </div>
-        </section>
-    </div>
-    <!-- <footer>
-        <div class="container">
-            Copyright &copy;
-        </div>
-    </footer> -->
-    <footer>
-        <div class="container containner-fluid bg-dark">
-            <div class="row">
-                <div class="col">
-                        Copyright &copy;
+    <!--NavBar-->
+    <div id="Header">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="#" class="navbar-brand"><h3>Portfolio</h3></a>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav" ml-auto><!--ml=margin left-->
+                        <li class="nav-item"><a href="index.html" class="nav-link">About</a><li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio<a><li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a><li>    
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </div>
+    <div id="Experience">
+        <div class="container mt-5">
+            <span class="bg-success text-white">Experience</span> <hr class="bg-success">
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <div class="card bg-white">
+                        <img src="assets/images/udemy.jpg" alt="udemy logo" width="200" height="80" class= "rounded mx-auto d-block">
+                        <h3 class="text-center text-danger">I'm Udemy Student</h3>
+                        <p class="lead text-justify p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam ipsa deleniti reprehenderit laborum cupiditate quibusdam, exercitationem autem ad mollitia eius modi iste facilis atque, aliquam illum nobis assumenda eos.</p>
+                    </div>
+                </div>
+            
+                <div class="col-lg-6 mt-5">
+                    <div class="card bg-white">
+                        <img src="assets/images/codeCademy.png" alt="codeCadamy logo" width="200" height="80" class="rounded mx-auto d-block">
+                        <h3 class="text-center text-danger">I'm CodeCademy Student</h3>
+                        <!---p-3=padding=3px--><p class="lead text-justify p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam ipsa deleniti reprehenderit laborum cupiditate quibusdam, exercitationem autem ad mollitia eius modi iste facilis atque, aliquam illum nobis assumenda eos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5"></div>
+                    <div class="card bg-white">
+                        <img src="assets/images/youTube.png" alt="youTube logo" width="200" height="80" class="rounded mx-auto d-block">
+                        <h3 class="text-center text-danger">I'm YouTube Student</h3>
+                        <p class="lead text-justify p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam ipsa deleniti reprehenderit laborum cupiditate quibusdam, exercitationem autem ad mollitia eius modi iste facilis atque, aliquam illum nobis assumenda eos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <div class="card bg-white">
+                        <img src="assets/images/freeCodeCamp.jpg" alt="freeCodeCamp logo" width="200" height="80" class="rounded mx-auto d-block">
+                        <h3 class="text-center text-danger">I'm FreeCodeCamp Student</h3>
+                        <p class="lead text-justify p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam ipsa deleniti reprehenderit laborum cupiditate quibusdam, exercitationem autem ad mollitia eius modi iste facilis atque, aliquam illum nobis assumenda eos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <div class="card bg-white">
+                        <img src="assets/images/UW.png" alt="UW logo" width="200" height="80" class="rounded mx-auto d-block">
+                        <h3 class="text-center text-danger">I'm UW Student</h3>
+                        <p class="lead text-justify p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus ipsam ipsa deleniti reprehenderit laborum cupiditate quibusdam, exercitationem autem ad mollitia eius modi iste facilis atque, aliquam illum nobis assumenda eos.</p>
+                    </div> 
+                </div>   
+            </div>
         </div>
-    </footer>
+    </div>
+<!-- Footer -->
+<footer class="page-footer font-small bg-white">
+<!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+</footer>
 </body>
 </html>
